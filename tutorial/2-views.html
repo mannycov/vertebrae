@@ -31,7 +31,7 @@ var Comment = Backbone.Model.extend({
   votes: function() {
     /* Return the votes attribute on this model.
      * Remember to use a getter when working with attributes! */
-     this.get('votes');
+     return this.get('votes');
   },
   upvote: function(){
     // Set the `votes` attribute to the current vote count plus one.
